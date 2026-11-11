@@ -22,7 +22,6 @@ Graduando em **Análise e Desenvolvimento de Sistemas (ADS) pelo Centro Universi
 - 💼 **Experiência Anterior:** Analista de TI na **Maxxcon** — *Sustentação de ERP Linx, Engenharia de Dados/Relatórios via SQL e Operações Críticas N1/N2*
 - 🎓 **Formação Acadêmica:** CST em **Análise e Desenvolvimento de Sistemas** no **Centro Universitário Senac** *(2024 – 2026)* | Técnico em Administração pelo **Instituto Social Nossa Senhora de Fátima**
 - ☁️ **Certificações Oficiais:** **AWS Cloud Practitioner Essentials**, **AWS Introduction to Generative AI**, **FluêncIA** e **Segurança em Tecnologia da Informação**
-- 🚀 **Projeto de Engenharia em Destaque:** **[KingHost Mail Mobile & API Gateway](https://github.com/FSMikael/KingHost_Mail_Mobile)** — *Ecossistema completo em Java 21 + Spring Boot 3.3.4 (JWT, AES-256, Jakarta Mail, Connection Pooling) + React Native 0.88 (Expo SDK 58 & TypeScript)*
 
 ---
 
