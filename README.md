@@ -1,189 +1,61 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="100%" height="100%">
-  <style>
-    @keyframes spinSlow {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-    @keyframes pulseGlow {
-      0%, 100% { opacity: 0.65; }
-      50% { opacity: 1; }
-    }
-    .svg-spin-slow {
-      transform-origin: center;
-      transform-box: fill-box;
-      animation: spinSlow 28s linear infinite;
-    }
-    .code-glow {
-      animation: pulseGlow 3s ease-in-out infinite;
-    }
-  </style>
-  <defs>
-    <linearGradient id="woodPlank1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#2b180a"/>
-      <stop offset="25%" stop-color="#472914"/>
-      <stop offset="55%" stop-color="#381f0e"/>
-      <stop offset="85%" stop-color="#4e2e17"/>
-      <stop offset="100%" stop-color="#241307"/>
-    </linearGradient>
-    <linearGradient id="woodPlank2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#221206"/>
-      <stop offset="40%" stop-color="#3d2210"/>
-      <stop offset="70%" stop-color="#2d190b"/>
-      <stop offset="100%" stop-color="#1e0f05"/>
-    </linearGradient>
-    <linearGradient id="bronzeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#f3d289"/>
-      <stop offset="45%" stop-color="#c6934b"/>
-      <stop offset="100%" stop-color="#6e481b"/>
-    </linearGradient>
-    <linearGradient id="goldTextGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#fff3d1"/>
-      <stop offset="50%" stop-color="#d9a85b"/>
-      <stop offset="100%" stop-color="#875a21"/>
-    </linearGradient>
-    <radialGradient id="deskWarmLight" cx="72%" cy="52%" r="38%">
-      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.38"/>
-      <stop offset="60%" stop-color="#92400e" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#1c0f06" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
-      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.85"/>
-    </filter>
-  </defs>
+<div align="center">
+  <!-- 1. BANNER VETORIAL AMADEIRADO COM SETUP DE 2 MONITORES -->
+  <img src="./assets/banner.svg" width="100%" alt="Hello World - Antonio Mikael Banner" />
+</div>
 
-  <!-- Moldura Externa Escura -->
-  <rect x="2" y="2" width="896" height="256" rx="10" fill="#1b0f07" stroke="url(#bronzeGrad)" stroke-width="4"/>
+<br />
 
-  <!-- Tábuas Horizontais de Madeira -->
-  <rect x="8" y="8" width="884" height="60" fill="url(#woodPlank1)"/>
-  <rect x="8" y="70" width="884" height="60" fill="url(#woodPlank2)"/>
-  <rect x="8" y="132" width="884" height="60" fill="url(#woodPlank1)"/>
-  <rect x="8" y="194" width="884" height="58" fill="url(#woodPlank2)"/>
+<!-- 2. INSÍGNIAS PRINCIPAIS (SHIELDS.IO CUSTOMIZADO EM TOM BRONZE/MADEIRA + LOGO LWSA) -->
+<div align="center">
+  <img src="https://img.shields.io/badge/ROLE-FULL_STACK_%26_INFRA_ENGINEER-5c3818?style=for-the-badge&logo=github&logoColor=f3d289&labelColor=261509" alt="Role" />
+  <img src="https://img.shields.io/badge/LWSA_(KINGHOST)-INFRASTRUCTURE_%26_SYSTEMS-78471d?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjE0IiBmaWxsPSIjZWVmMmZhIi8%2BPGRlZnM%2BPGxpbmVhckdyYWRpZW50IGlkPSJnMSIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNkY2RmZTYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyMjI4M2MiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0iZzIiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMjIyODNjIi8%2BPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiM4Zjk2YTYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkY2RmZTYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cG9seWdvbiBwb2ludHM9IjE2LDMwIDI4LjUsMzAgNDIsNzUgMjkuNSw3NSIgZmlsbD0idXJsKCNnMSkiLz48cG9seWdvbiBwb2ludHM9IjI5LjUsNzUgNDIsNzUgNTYsMzAgNDMuNSwzMCIgZmlsbD0idXJsKCNnMikiLz48cG9seWdvbiBwb2ludHM9IjQzLjUsMzAgNTYsMzAgNzAuNSw3NSA1OCw3NSIgZmlsbD0idXJsKCNnMSkiLz48cG9seWdvbiBwb2ludHM9IjU4LDc1IDcwLjUsNzUgODQsMzAgNzEuNSwzMCIgZmlsbD0idXJsKCNnMikiLz48cG9seWdvbiBwb2ludHM9IjI5LjUsNzUgNDIsNzUgMzUuOCw1NCIgZmlsbD0iIzFlMjQzNiIvPjxwb2x5Z29uIHBvaW50cz0iNDMuNSwzMCA1NiwzMCA0OS44LDUxIiBmaWxsPSIjMWUyNDM2Ii8%2BPHBvbHlnb24gcG9pbnRzPSI1OCw3NSA3MC41LDc1IDY0LjIsNTQiIGZpbGw9IiMxZTI0MzYiLz48L3N2Zz4%3D&labelColor=261509" alt="LWSA KingHost" />
+  <img src="https://img.shields.io/badge/AWS-CLOUD_%26_GEN_AI_CERTIFIED-8c5319?style=for-the-badge&logo=amazonwebservices&logoColor=f3d289&labelColor=261509" alt="AWS" />
+  <img src="https://img.shields.io/badge/SENAC-ADS_(2024--2026)-4d3319?style=for-the-badge&logo=googlescholar&logoColor=f3d289&labelColor=261509" alt="Senac ADS" />
+</div>
 
-  <!-- Divisórias das Tábuas e Veios da Madeira -->
-  <line x1="8" y1="69" x2="892" y2="69" stroke="#120904" stroke-width="2.5"/>
-  <line x1="8" y1="131" x2="892" y2="131" stroke="#120904" stroke-width="2.5"/>
-  <line x1="8" y1="193" x2="892" y2="193" stroke="#120904" stroke-width="2.5"/>
-  <path d="M40 35 Q 180 25, 340 38 T 650 32" fill="none" stroke="#1f1006" stroke-width="1.5" opacity="0.6"/>
-  <path d="M80 102 Q 250 115, 420 98 T 790 105" fill="none" stroke="#190d05" stroke-width="1.5" opacity="0.6"/>
-  <path d="M25 162 Q 210 150, 410 168 T 750 158" fill="none" stroke="#1f1006" stroke-width="1.5" opacity="0.6"/>
+<br />
 
-  <!-- Iluminação Quente do Setup à Direita -->
-  <rect x="8" y="8" width="884" height="244" fill="url(#deskWarmLight)"/>
+<!-- 3. SEÇÃO 01 // SOBRE O ENGENHEIRO (DIVISOR + CARD PERGAMINHO & MADEIRA) -->
+<div align="center">
+  <img src="./assets/div-01.svg" width="100%" alt="01 // SOBRE O ENGENHEIRO" />
+  <br /><br />
+  <img src="./assets/sobre.svg" width="100%" alt="Sobre o Engenheiro Antonio Mikael" />
+</div>
 
-  <!-- ILUSTRAÇÃO VETORIAL DO SETUP: DUAS TELAS + MESA DE MADEIRA -->
-  <g transform="translate(505, 22)">
-    <!-- Prateleira de Madeira ao Fundo com Livros -->
-    <rect x="15" y="12" width="250" height="8" rx="2" fill="#3b200d" stroke="#1a0d05" stroke-width="1.5"/>
-    <rect x="28" y="-10" width="12" height="22" rx="1" fill="#7c2d12" stroke="#1a0d05"/>
-    <rect x="41" y="-13" width="14" height="25" rx="1" fill="#1e3a8a" stroke="#1a0d05"/>
-    <rect x="56" y="-8" width="11" height="20" rx="1" fill="#14532d" stroke="#1a0d05"/>
-    <!-- Caneca de Café fumegando -->
-    <rect x="225" y="138" width="18" height="20" rx="3" fill="#9a3412" stroke="#431407" stroke-width="1.5"/>
-    <path d="M243 142 C249 142, 249 153, 243 153" fill="none" stroke="#9a3412" stroke-width="2.5"/>
-    <path d="M231 133 Q228 126 233 121" fill="none" stroke="#fcd34d" stroke-width="1.5" opacity="0.6"/>
-    <path d="M237 134 Q240 127 235 122" fill="none" stroke="#fcd34d" stroke-width="1.5" opacity="0.6"/>
+<br />
 
-    <!-- Tampo da Mesa de Madeira -->
-    <polygon points="0,165 275,165 295,195 -20,195" fill="#4a2811" stroke="#c6934b" stroke-width="1.5"/>
-    <rect x="-20" y="195" width="315" height="8" fill="#291507" stroke="#140902"/>
+<!-- 4. SEÇÃO 02 // ARSENAL DE TECNOLOGIAS (DIVISOR + SKILL ICONS + LEMA VETORIAL) -->
+<div align="center">
+  <img src="./assets/div-02.svg" width="100%" alt="02 // ARSENAL DE TECNOLOGIAS" />
+  <br /><br />
+  <img src="https://skillicons.dev/icons?i=java,spring,angular,ts,js,react,html,css,bootstrap,tailwind,nodejs,php,mysql,postgres,aws,docker,git,linux&perline=9&theme=dark" alt="Arsenal de Tecnologias" />
+  <br /><br />
+  <img src="./assets/lema.svg" width="75%" alt="Cada ferramenta, uma lâmina" />
+</div>
 
-    <!-- Suporte Articulado Duplo dos Monitores -->
-    <rect x="122" y="132" width="22" height="33" fill="#1f2937" stroke="#0f172a" stroke-width="1.5"/>
-    <polygon points="98,165 168,165 156,156 110,156" fill="#374151" stroke="#111827" stroke-width="1.5"/>
+<br />
 
-    <!-- MONITOR ESQUERDO -->
-    <g transform="translate(8, 34) skewY(-3)">
-      <rect x="0" y="0" width="118" height="78" rx="4" fill="#111827" stroke="#9ca3af" stroke-width="2"/>
-      <rect x="5" y="5" width="108" height="66" rx="2" fill="#0f172a"/>
-      <rect x="5" y="5" width="18" height="66" fill="#1e293b"/>
-      <g class="code-glow">
-        <rect x="28" y="12" width="42" height="3.5" rx="1.5" fill="#f59e0b"/>
-        <rect x="28" y="20" width="68" height="3.5" rx="1.5" fill="#38bdf8"/>
-        <rect x="36" y="28" width="54" height="3.5" rx="1.5" fill="#4ade80"/>
-        <rect x="36" y="36" width="70" height="3.5" rx="1.5" fill="#a78bfa"/>
-        <rect x="44" y="44" width="48" height="3.5" rx="1.5" fill="#f87171"/>
-        <rect x="36" y="52" width="60" height="3.5" rx="1.5" fill="#38bdf8"/>
-        <rect x="28" y="60" width="25" height="3.5" rx="1.5" fill="#f59e0b"/>
-      </g>
-    </g>
+<!-- 5. SEÇÃO 03 // MAPA DE ENGENHARIA & ARQUITETURA (DIVISOR + TABELA RPG VETORIAL) -->
+<div align="center">
+  <img src="./assets/div-03.svg" width="100%" alt="03 // MAPA DE ENGENHARIA & ARQUITETURA" />
+  <br /><br />
+  <img src="./assets/mapa-engenharia.svg" width="100%" alt="Mapa de Engenharia e Arquitetura" />
+</div>
 
-    <!-- MONITOR DIREITO -->
-    <g transform="translate(136, 28) skewY(3)">
-      <rect x="0" y="0" width="118" height="78" rx="4" fill="#111827" stroke="#9ca3af" stroke-width="2"/>
-      <rect x="5" y="5" width="108" height="66" rx="2" fill="#090d16"/>
-      <rect x="5" y="5" width="108" height="9" fill="#1e293b"/>
-      <circle cx="11" cy="9.5" r="2" fill="#ef4444"/>
-      <circle cx="17" cy="9.5" r="2" fill="#eab308"/>
-      <circle cx="23" cy="9.5" r="2" fill="#22c55e"/>
-      <g class="code-glow">
-        <rect x="12" y="20" width="55" height="3.5" rx="1.5" fill="#22c55e"/>
-        <rect x="12" y="28" width="84" height="3.5" rx="1.5" fill="#eab308"/>
-        <rect x="18" y="36" width="64" height="3.5" rx="1.5" fill="#38bdf8"/>
-        <rect x="14" y="56" width="8" height="10" fill="#22c55e"/>
-        <rect x="26" y="50" width="8" height="16" fill="#22c55e"/>
-        <rect x="38" y="45" width="8" height="21" fill="#f59e0b"/>
-        <rect x="50" y="52" width="8" height="14" fill="#38bdf8"/>
-        <rect x="62" y="42" width="8" height="24" fill="#22c55e"/>
-      </g>
-    </g>
+<br />
 
-    <!-- Teclado Mecânico Iluminado -->
-    <polygon points="75,172 185,172 193,186 67,186" fill="#1f2937" stroke="#f59e0b" stroke-width="1"/>
-    <line x1="78" y1="176" x2="182" y2="176" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4 3"/>
-    <line x1="74" y1="181" x2="186" y2="181" stroke="#fbbf24" stroke-width="2" stroke-dasharray="5 3"/>
-
-    <!-- Mouse -->
-    <ellipse cx="210" cy="180" rx="7" ry="10" fill="#1f2937" stroke="#f59e0b" stroke-width="1"/>
-  </g>
-
-  <!-- BÚSSOLA / ASTROLÁBIO DE BRONZE GIRATÓRIO (Canto Direito) -->
-  <g transform="translate(835, 72)">
-    <circle cx="0" cy="0" r="42" fill="#1c0f07" stroke="url(#bronzeGrad)" stroke-width="3.5"/>
-    <g class="svg-spin-slow">
-      <circle cx="0" cy="0" r="33" fill="none" stroke="#c6934b" stroke-width="1.5" stroke-dasharray="6 4"/>
-      <polygon points="0,-38 5,-10 0,-15 -5,-10" fill="url(#bronzeGrad)"/>
-      <polygon points="0,38 5,10 0,15 -5,10" fill="url(#bronzeGrad)"/>
-      <polygon points="-38,0 -10,5 -15,0 -10,-5" fill="url(#bronzeGrad)"/>
-      <polygon points="38,0 10,5 15,0 10,-5" fill="url(#bronzeGrad)"/>
-      <polygon points="-24,-24 -6,-10 -10,-6" fill="#8f6329"/>
-      <polygon points="24,-24 6,-10 10,-6" fill="#8f6329"/>
-      <polygon points="-24,24 -6,10 -10,6" fill="#8f6329"/>
-      <polygon points="24,24 6,10 10,6" fill="#8f6329"/>
-    </g>
-    <circle cx="0" cy="0" r="7" fill="url(#bronzeGrad)" stroke="#1c0f07" stroke-width="2"/>
-  </g>
-
-  <!-- CANTONEIRAS MEDIEVAIS DE BRONZE -->
-  <path d="M6 34 L6 6 L34 6" fill="none" stroke="url(#bronzeGrad)" stroke-width="5"/>
-  <path d="M866 6 L894 6 L894 34" fill="none" stroke="url(#bronzeGrad)" stroke-width="5"/>
-  <path d="M6 226 L6 254 L34 254" fill="none" stroke="url(#bronzeGrad)" stroke-width="5"/>
-  <path d="M866 254 L894 254 L894 226" fill="none" stroke="url(#bronzeGrad)" stroke-width="5"/>
-
-  <!-- TIPOGRAFIA PRINCIPAL: HELLO, WORLD + SUBTÍTULO -->
-  <text x="42" y="27" fill="#a37a48" font-family="Consolas, 'Courier New', monospace" font-size="11" letter-spacing="2">
-    // GUILD_PROFILE :: FSMIKAEL_V2.6
-  </text>
-  <text x="42" y="45" fill="#c6934b" font-family="Consolas, 'Courier New', monospace" font-size="10.5" letter-spacing="1.5">
-    // OBS: Utilize no modo escuro do navegador
-  </text>
-
-  <text x="42" y="114" fill="url(#goldTextGrad)" filter="url(#dropShadow)" font-family="Georgia, 'Times New Roman', serif" font-size="60" font-weight="900" letter-spacing="2">
-    Hello, World
-  </text>
-
-  <!-- Ornamento embaixo do Hello World -->
-  <path d="M44 134 L220 134 L230 129 L240 134 L455 134" fill="none" stroke="url(#bronzeGrad)" stroke-width="2"/>
-  <polygon points="230,126 236,134 230,142 224,134" fill="url(#bronzeGrad)"/>
-
-  <text x="44" y="162" fill="#f3d289" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="700" letter-spacing="1.5">
-    ANTONIO MIKAEL • ENGENHARIA DE SOFTWARE &amp; INFRA WEB
-  </text>
-
-  <rect x="44" y="180" width="452" height="34" rx="5" fill="#140b05" fill-opacity="0.85" stroke="#855826" stroke-width="1.2"/>
-  <text x="56" y="201" fill="#e5c185" font-family="Consolas, 'Courier New', monospace" font-size="11.5">
-    &gt;_ transformando código, queries e servidores em alta disponibilidade
-  </text>
-</svg>
+<!-- 6. SEÇÃO 04 // CONTATO & REDES (DIVISOR + PLACAS DE BRONZE) -->
+<div align="center">
+  <img src="./assets/div-04.svg" width="100%" alt="04 // CONTATO & REDES" />
+  <br /><br />
+  <a href="https://www.linkedin.com/in/antoniomikael" target="_blank">
+    <img src="https://img.shields.io/badge/LINKEDIN-ANTONIO_MIKAEL-6e4720?style=for-the-badge&logo=linkedin&logoColor=f3d289&labelColor=261509" alt="LinkedIn" />
+  </a>
+  <a href="mailto:antonio.mk.fernandes@gmail.com">
+    <img src="https://img.shields.io/badge/GMAIL-ENVIAR_MENSAGEM-802f2f?style=for-the-badge&logo=gmail&logoColor=f3d289&labelColor=261509" alt="Gmail" />
+  </a>
+  <a href="https://github.com/FSMikael" target="_blank">
+    <img src="https://img.shields.io/badge/GITHUB-FSMIKAEL-47301a?style=for-the-badge&logo=github&logoColor=f3d289&labelColor=261509" alt="GitHub" />
+  </a>
+</div>
 
