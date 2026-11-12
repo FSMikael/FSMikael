@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" width="100%" height="100%">
+  <style>
+    @keyframes spinSlow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes spinReverse {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(0deg); }
+    }
+    .svg-spin-slow {
+      transform-origin: center;
+      transform-box: fill-box;
+      animation: spinSlow 28s linear infinite;
+    }
+    .svg-spin-reverse {
+      transform-origin: center;
+      transform-box: fill-box;
+      animation: spinReverse 18s linear infinite;
+    }
+  </style>
+  <defs>
+    <linearGradient id="woodFrameSobre" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a2110"/>
+      <stop offset="50%" stop-color="#221207"/>
+      <stop offset="100%" stop-color="#140a04"/>
+    </linearGradient>
+    <linearGradient id="parchmentInner" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#29180c"/>
+      <stop offset="50%" stop-color="#1f1209"/>
+      <stop offset="100%" stop-color="#170d06"/>
+    </linearGradient>
+    <linearGradient id="goldBorderSobre" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8c5c26"/>
+      <stop offset="50%" stop-color="#e5b869"/>
+      <stop offset="100%" stop-color="#784d1e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo e Moldura de Madeira/Bronze -->
+  <rect x="2" y="2" width="896" height="446" rx="10" fill="url(#woodFrameSobre)" stroke="url(#goldBorderSobre)" stroke-width="3"/>
+  <rect x="14" y="14" width="872" height="422" rx="6" fill="url(#parchmentInner)" stroke="#5c3b1c" stroke-width="1.5"/>
+
+  <!-- Cantoneiras Internas Estilo Grimório -->
+  <path d="M22 42 L22 22 L42 22" fill="none" stroke="#d4a259" stroke-width="2.5"/>
+  <path d="M858 22 L878 22 L878 42" fill="none" stroke="#d4a259" stroke-width="2.5"/>
+  <path d="M22 408 L22 428 L42 428" fill="none" stroke="#d4a259" stroke-width="2.5"/>
+  <path d="M858 428 L878 428 L878 408" fill="none" stroke="#d4a259" stroke-width="2.5"/>
+
+  <!-- EMBLEMA DE ENGRENAGEM DE BRONZE GIRATÓRIA (Lado Direito Superior) -->
+  <g transform="translate(795, 96)">
+    <polygon points="-18,30 -18,72 0,58 18,72 18,30" fill="#6b1d1d" stroke="#3b0d0d" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="46" fill="#180d06" stroke="url(#goldBorderSobre)" stroke-width="3"/>
+    <circle cx="0" cy="0" r="39" fill="none" stroke="#8c5c26" stroke-width="1" stroke-dasharray="3 3"/>
+    <g class="svg-spin-slow">
+      <circle cx="-6" cy="-4" r="18" fill="none" stroke="#d4a259" stroke-width="5" stroke-dasharray="7 5"/>
+      <circle cx="-6" cy="-4" r="11" fill="#2e1a0c" stroke="#d4a259" stroke-width="2"/>
+      <circle cx="-6" cy="-4" r="4" fill="#d4a259"/>
+    </g>
+    <g class="svg-spin-reverse">
+      <circle cx="14" cy="14" r="11" fill="none" stroke="#b5803d" stroke-width="4" stroke-dasharray="5 4"/>
+      <circle cx="14" cy="14" r="6" fill="#2e1a0c" stroke="#b5803d" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- CONTEÚDO HTML/CSS EMBUTIDO VIA FOREIGNOBJECT -->
+  <foreignObject x="34" y="28" width="832" height="395">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Georgia, 'Times New Roman', serif; color: #e8d8c0; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+      
+      <!-- Parágrafo com Capitular Medieval "A" -->
+      <div style="padding-right: 115px; font-size: 14.2px; line-height: 1.65; text-align: justify;">
+        <span style="float: left; font-family: Georgia, serif; font-size: 56px; line-height: 46px; padding-top: 4px; padding-right: 12px; padding-bottom: 2px; color: #e5b869; font-weight: 900; text-shadow: 0 3px 6px rgba(0,0,0,0.85);">A</span>
+        tuo no desenvolvimento <strong style="color: #f7d794;">Full Stack</strong> e na engenharia de sistemas críticos, combinando arquitetura de software moderna com sólida vivência em infraestrutura web de alta disponibilidade na <strong style="color: #f7d794;">LWSA (KingHost)</strong>. Projeto e desenvolvo soluções ponta a ponta — desde <strong style="color: #f7d794;">APIs RESTful escaláveis e gateways de mensageria em Java (Spring Boot)</strong> até aplicações Web reativas em <strong style="color: #f7d794;">Angular &amp; TypeScript</strong> e aplicativos Mobile multiplataforma em <strong style="color: #f7d794;">React Native (Expo)</strong>. Graduando em <strong style="color: #f7d794;">ADS pelo Senac</strong>, trago forte bagagem analítica em sustentação de ERP (Linx), otimização de queries SQL, diagnóstico de causa raiz (RCA) e servidores Linux/AWS/Docker.
+      </div>
+
+      <!-- Divisor interno sutil -->
+      <div style="border-top: 1px solid #4d3219; margin: 10px 0;"></div>
+
+      <!-- Tabela de Atributos RPG (Ficha do Engenheiro) -->
+      <div style="display: grid; grid-template-columns: 195px 1fr; row-gap: 9px; column-gap: 16px; font-size: 13.2px; align-items: baseline;">
+        
+        <div style="font-family: Georgia, serif; color: #d4a259; font-weight: 700; letter-spacing: 1px; font-size: 11.5px;">
+          ♦ CLASSE &amp; ATUAÇÃO
+        </div>
+        <div style="color: #f0e2cc;">
+          <strong>Analista na LWSA (KingHost)</strong> — <em>Infraestrutura de Servidores Web, DNS, Arquitetura de E-mail Corporativo (IMAP/SMTP/POP) e Cloud</em>
+        </div>
+
+        <div style="font-family: Georgia, serif; color: #d4a259; font-weight: 700; letter-spacing: 1px; font-size: 11.5px;">
+          ♦ MISSÃO ANTERIOR
+        </div>
+        <div style="color: #f0e2cc;">
+          <strong>Analista de TI na Maxxcon</strong> — <em>Sustentação de ERP Linx, Engenharia de Dados/Relatórios via SQL e Operações Críticas N1/N2</em>
+        </div>
+
+        <div style="font-family: Georgia, serif; color: #d4a259; font-weight: 700; letter-spacing: 1px; font-size: 11.5px;">
+          ♦ FORJA &amp; ARQUITETURA
+        </div>
+        <div style="color: #f0e2cc;">
+          APIs RESTful em Java 21 &amp; Spring Boot 3, SPAs em Angular/TypeScript, Mobile em React Native (Expo) e Bancos SQL (MySQL/PostgreSQL)
+        </div>
+
+        <div style="font-family: Georgia, serif; color: #d4a259; font-weight: 700; letter-spacing: 1px; font-size: 11.5px;">
+          ♦ ACADEMIA (GRIMÓRIO)
+        </div>
+        <div style="color: #f0e2cc;">
+          CST em <strong>Análise e Desenvolvimento de Sistemas</strong> no Centro Universitário Senac <em>(2024 – 2026)</em> | Técnico em Administração (Instituto N. Sra. de Fátima)
+        </div>
+
+        <div style="font-family: Georgia, serif; color: #d4a259; font-weight: 700; letter-spacing: 1px; font-size: 11.5px;">
+          ♦ INSÍGNIAS OFICIAIS
+        </div>
+        <div style="color: #f0e2cc;">
+          <strong>AWS Cloud Practitioner Essentials</strong>, AWS Introduction to Generative AI, Fluência em IA &amp; Segurança da Informação
+        </div>
+
+      </div>
+    </div>
+  </foreignObject>
+</svg>
+

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="woodTableBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#26150a"/>
+      <stop offset="100%" stop-color="#140b05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Moldura Amadeirada da Tabela -->
+  <rect x="2" y="2" width="896" height="496" rx="10" fill="url(#woodTableBg)" stroke="#c6934b" stroke-width="3"/>
+  <rect x="12" y="12" width="876" height="476" rx="6" fill="#180e07" stroke="#5c3b1c" stroke-width="1.5"/>
+
+  <foreignObject x="22" y="20" width="856" height="460">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #e8d8c0; width: 100%; height: 100%;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 12.8px;">
+        <thead>
+          <tr style="border-bottom: 2px solid #8c5c26; background: rgba(62, 35, 16, 0.65); font-family: Georgia, serif; color: #f3d289; font-size: 12px; letter-spacing: 1px;">
+            <th style="padding: 12px 10px; text-align: left; width: 20%;">CAMADA DE ENGENHARIA</th>
+            <th style="padding: 12px 10px; text-align: left; width: 24%;">FRAMEWORKS &amp; ECOSSISTEMA</th>
+            <th style="padding: 12px 10px; text-align: left; width: 38%;">APLICAÇÃO EM ARQUITETURA DE SOFTWARE</th>
+            <th style="padding: 12px 10px; text-align: left; width: 18%;">ÍNDICE DE USO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- LINHA 1: BACK-END -->
+          <tr style="border-bottom: 1px solid #3d2512;">
+            <td style="padding: 13px 10px; font-weight: 700; color: #f5d799; font-family: Georgia, serif;">
+              ⚔️ Back-End &amp; APIs
+            </td>
+            <td style="padding: 13px 10px;">
+              <span style="display:inline-block; background:#14532d; color:#bbf7d0; border:1px solid #22c55e; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">Spring Boot 3</span>
+              <span style="display:inline-block; background:#7c2d12; color:#fed7aa; border:1px solid #f97316; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">Java 21</span>
+              <span style="display:inline-block; background:#1e3a8a; color:#bfdbfe; border:1px solid #60a5fa; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">Node.js</span>
+              <span style="display:inline-block; background:#312e81; color:#c7d2fe; border:1px solid #818cf8; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">PHP</span>
+            </td>
+            <td style="padding: 13px 10px; color: #d6c3a5; line-height: 1.45;">
+              APIs RESTful, Spring Security, Autenticação Stateless (JWT / AES-256), JPA/Hibernate e Gateways IMAP/SMTP
+            </td>
+            <td style="padding: 13px 10px;">
+              <div style="font-family: monospace; font-size: 11px; color: #fbbf24; margin-bottom: 4px;">95% • Master</div>
+              <div style="width: 100%; height: 9px; background: #0d0703; border: 1px solid #6e481b; border-radius: 5px; overflow: hidden;">
+                <div style="width: 95%; height: 100%; background: linear-gradient(90deg, #b45309, #fbbf24);"></div>
+              </div>
+            </td>
+          </tr>
+
+          <!-- LINHA 2: FRONT-END -->
+          <tr style="border-bottom: 1px solid #3d2512; background: rgba(38, 21, 10, 0.35);">
+            <td style="padding: 13px 10px; font-weight: 700; color: #f5d799; font-family: Georgia, serif;">
+              🛡️ Front-End Web (SPA)
+            </td>
+            <td style="padding: 13px 10px;">
+              <span style="display:inline-block; background:#7f1d1d; color:#fecaca; border:1px solid #f87171; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">Angular</span>
+              <span style="display:inline-block; background:#1e3a8a; color:#bfdbfe; border:1px solid #38bdf8; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">TypeScript</span>
+              <span style="display:inline-block; background:#164e63; color:#a5f3fc; border:1px solid #22d3ee; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">Tailwind</span>
+              <span style="display:inline-block; background:#4c1d95; color:#ddd6fe; border:1px solid #a78bfa; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">Bootstrap</span>
+            </td>
+            <td style="padding: 13px 10px; color: #d6c3a5; line-height: 1.45;">
+              Arquitetura SPA, Componentização Reativa (RxJS), Consumo de APIs REST e Design System Responsivo (HTML5/CSS3)
+            </td>
+            <td style="padding: 13px 10px;">
+              <div style="font-family: monospace; font-size: 11px; color: #fbbf24; margin-bottom: 4px;">90% • High</div>
+              <div style="width: 100%; height: 9px; background: #0d0703; border: 1px solid #6e481b; border-radius: 5px; overflow: hidden;">
+                <div style="width: 90%; height: 100%; background: linear-gradient(90deg, #991b1b, #f87171);"></div>
+              </div>
+            </td>
+          </tr>
+
+          <!-- LINHA 3: MOBILE -->
+          <tr style="border-bottom: 1px solid #3d2512;">
+            <td style="padding: 13px 10px; font-weight: 700; color: #f5d799; font-family: Georgia, serif;">
+              🏹 Mobile Multiplataforma
+            </td>
+            <td style="padding: 13px 10px;">
+              <span style="display:inline-block; background:#0c4a6e; color:#bae6fd; border:1px solid #38bdf8; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">React Native</span>
+              <span style="display:inline-block; background:#334155; color:#e2e8f0; border:1px solid #94a3b8; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">Expo SDK</span>
+            </td>
+            <td style="padding: 13px 10px; color: #d6c3a5; line-height: 1.45;">
+              Aplicativos Android/iOS Nativos, Gerenciamento de Estado com Context/Hooks, Armazenamento Seguro e Axios
+            </td>
+            <td style="padding: 13px 10px;">
+              <div style="font-family: monospace; font-size: 11px; color: #38bdf8; margin-bottom: 4px;">86% • Prof</div>
+              <div style="width: 100%; height: 9px; background: #0d0703; border: 1px solid #6e481b; border-radius: 5px; overflow: hidden;">
+                <div style="width: 86%; height: 100%; background: linear-gradient(90deg, #0369a1, #38bdf8);"></div>
+              </div>
+            </td>
+          </tr>
+
+          <!-- LINHA 4: DADOS & SQL -->
+          <tr style="border-bottom: 1px solid #3d2512; background: rgba(38, 21, 10, 0.35);">
+            <td style="padding: 13px 10px; font-weight: 700; color: #f5d799; font-family: Georgia, serif;">
+              📜 Dados &amp; Persistência
+            </td>
+            <td style="padding: 13px 10px;">
+              <span style="display:inline-block; background:#1e3a8a; color:#bfdbfe; border:1px solid #60a5fa; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">MySQL</span>
+              <span style="display:inline-block; background:#172554; color:#93c5fd; border:1px solid #3b82f6; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">PostgreSQL</span>
+            </td>
+            <td style="padding: 13px 10px; color: #d6c3a5; line-height: 1.45;">
+              Modelagem Relacional, Queries Complexas SQL, Extração de Relatórios Gerenciais (ERP Linx) e Performance Tuning
+            </td>
+            <td style="padding: 13px 10px;">
+              <div style="font-family: monospace; font-size: 11px; color: #4ade80; margin-bottom: 4px;">88% • High</div>
+              <div style="width: 100%; height: 9px; background: #0d0703; border: 1px solid #6e481b; border-radius: 5px; overflow: hidden;">
+                <div style="width: 88%; height: 100%; background: linear-gradient(90deg, #15803d, #4ade80);"></div>
+              </div>
+            </td>
+          </tr>
+
+          <!-- LINHA 5: CLOUD & INFRA -->
+          <tr>
+            <td style="padding: 13px 10px; font-weight: 700; color: #f5d799; font-family: Georgia, serif;">
+              🏰 Cloud, DevOps &amp; Infra
+            </td>
+            <td style="padding: 13px 10px;">
+              <span style="display:inline-block; background:#78350f; color:#fde68a; border:1px solid #f59e0b; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">AWS Cloud</span>
+              <span style="display:inline-block; background:#0c4a6e; color:#bae6fd; border:1px solid #38bdf8; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">Docker</span>
+              <span style="display:inline-block; background:#713f12; color:#fef08a; border:1px solid #eab308; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">Linux</span>
+              <span style="display:inline-block; background:#7c2d12; color:#fed7aa; border:1px solid #f97316; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">Git</span>
+            </td>
+            <td style="padding: 13px 10px; color: #d6c3a5; line-height: 1.45;">
+              Containerização, Servidores Linux, Gestão de Zonas DNS, Hospedagem Web (KingHost) e Segurança da Informação
+            </td>
+            <td style="padding: 13px 10px;">
+              <div style="font-family: monospace; font-size: 11px; color: #fbbf24; margin-bottom: 4px;">85% • High</div>
+              <div style="width: 100%; height: 9px; background: #0d0703; border: 1px solid #6e481b; border-radius: 5px; overflow: hidden;">
+                <div style="width: 85%; height: 100%; background: linear-gradient(90deg, #b45309, #fbbf24);"></div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </foreignObject>
+</svg>
+
