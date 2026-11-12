@@ -49,7 +49,7 @@
   <path d="M858 428 L878 428 L878 408" fill="none" stroke="#d4a259" stroke-width="2.5"/>
 
   <!-- EMBLEMA DE ENGRENAGEM DE BRONZE GIRATÓRIA (Lado Direito Superior) -->
-  <g transform="translate(795, 96)">
+  <g transform="translate(815, 96)">
     <polygon points="-18,30 -18,72 0,58 18,72 18,30" fill="#6b1d1d" stroke="#3b0d0d" stroke-width="1.5"/>
     <circle cx="0" cy="0" r="46" fill="#180d06" stroke="url(#goldBorderSobre)" stroke-width="3"/>
     <circle cx="0" cy="0" r="39" fill="none" stroke="#8c5c26" stroke-width="1" stroke-dasharray="3 3"/>
