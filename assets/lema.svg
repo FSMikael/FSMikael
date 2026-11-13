@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 48" width="100%">
+  <style>
+    @media (prefers-color-scheme: light) {
+      .bg-div   { fill: #fbf5e8 !important; stroke: #8a5a24 !important; }
+      .txt-lema { fill: #4a2106 !important; }
+      .lema-gem { fill: #9a3412 !important; }
+      .div-line { stroke: #b07c3e !important; }
+    }
+  </style>
+  <rect class="bg-div" x="2" y="3" width="676" height="42" rx="8" fill="#1e120a" stroke="#c89143" stroke-width="2"/>
+  <line class="div-line" x1="22" y1="24" x2="72" y2="24" stroke="#9c6d2e" stroke-width="2"/>
+  <circle class="lema-gem" cx="82" cy="24" r="4" fill="#d97706"/>
+  <text class="txt-lema" x="340" y="30" text-anchor="middle" fill="#f5d796" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-style="italic" font-weight="bold">
+    “Cada ferramenta, uma lâmina — da infra ao código.”
+  </text>
+  <circle class="lema-gem" cx="598" cy="24" r="4" fill="#d97706"/>
+  <line class="div-line" x1="608" y1="24" x2="658" y2="24" stroke="#9c6d2e" stroke-width="2"/>
+</svg>
