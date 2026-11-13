@@ -1,8 +1,3 @@
-<!-- ================================================================= -->
-<!-- PERFIL GITHUB: ANTONIO MIKAEL (FSMikael) - TEMA RPG AMADEIRADO    -->
-<!-- RESPONSIVO (MOBILE & DESKTOP) + ADAPTÁVEL (MODO ESCURO & CLARO)   -->
-<!-- ================================================================= -->
-
 <div align="center">
   <img src="./assets/banner.svg" width="100%" alt="Hello World - Antonio Mikael" />
 </div>
@@ -33,9 +28,9 @@
   <img src="./assets/divisor-arsenal.svg" width="100%" alt="02 // ARSENAL DE TECNOLOGIAS" />
   <br /><br />
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=java,spring,angular,ts,js,react,html,css,bootstrap,tailwind,nodejs,php,mysql,postgres,aws,docker,git,linux&perline=6&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=java,spring,angular,ts,js,react,html,css,bootstrap,tailwind,nodejs,php,mysql,postgres,aws,docker,git,linux&perline=6&theme=light" />
-    <img src="https://skillicons.dev/icons?i=java,spring,angular,ts,js,react,html,css,bootstrap,tailwind,nodejs,php,mysql,postgres,aws,docker,git,linux&perline=6&theme=dark" width="480" alt="Tech Stack" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=java%2Cspring%2Cangular%2Cts%2Cjs%2Creact%2Chtml%2Ccss%2Cbootstrap%2Ctailwind%2Cnodejs%2Cphp%2Cmysql%2Cpostgres%2Caws%2Cdocker%2Cgit%2Clinux&perline=6&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=java%2Cspring%2Cangular%2Cts%2Cjs%2Creact%2Chtml%2Ccss%2Cbootstrap%2Ctailwind%2Cnodejs%2Cphp%2Cmysql%2Cpostgres%2Caws%2Cdocker%2Cgit%2Clinux&perline=6&theme=light" />
+    <img src="https://skillicons.dev/icons?i=java%2Cspring%2Cangular%2Cts%2Cjs%2Creact%2Chtml%2Ccss%2Cbootstrap%2Ctailwind%2Cnodejs%2Cphp%2Cmysql%2Cpostgres%2Caws%2Cdocker%2Cgit%2Clinux&perline=6&theme=dark" width="480" alt="Tech Stack" />
   </picture>
   <br /><br />
   <img src="./assets/lema.svg" width="100%" alt="Cada ferramenta, uma lâmina" />
