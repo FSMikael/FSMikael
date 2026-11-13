@@ -1,136 +1,188 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 772" width="100%">
   <defs>
-    <linearGradient id="woodTableBg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#26150a"/>
-      <stop offset="100%" stop-color="#140b05"/>
+    <linearGradient id="mGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="mRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#991b1b"/>
+      <stop offset="100%" stop-color="#f87171"/>
+    </linearGradient>
+    <linearGradient id="mBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="mGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#4ade80"/>
     </linearGradient>
   </defs>
+  <style>
+    @media (prefers-color-scheme: light) {
+      .bg-wood-outer { fill: #6e4726 !important; }
+      .bg-wood-inner { fill: #ead9be !important; stroke: #8a5a24 !important; }
+      .bg-wood-card  { fill: #fbf5e8 !important; stroke: #9c6830 !important; }
+      .txt-gold      { fill: #4a2106 !important; }
+      .txt-body      { fill: #291407 !important; }
+      .bar-track     { fill: #d6c1a3 !important; stroke: #8a5a24 !important; }
+      .pct-gold      { fill: #9a3412 !important; }
+      .pct-red       { fill: #991b1b !important; }
+      .pct-blue      { fill: #075985 !important; }
+      .pct-green     { fill: #14532d !important; }
+    }
+  </style>
 
-  <!-- Moldura Amadeirada da Tabela -->
-  <rect x="2" y="2" width="896" height="496" rx="10" fill="url(#woodTableBg)" stroke="#c6934b" stroke-width="3"/>
-  <rect x="12" y="12" width="876" height="476" rx="6" fill="#180e07" stroke="#5c3b1c" stroke-width="1.5"/>
+  <!-- Moldura Externa -->
+  <rect class="bg-wood-outer" x="2" y="2" width="676" height="768" rx="12" fill="#1b1009" stroke="#c89143" stroke-width="3"/>
+  <rect class="bg-wood-inner" x="10" y="10" width="660" height="752" rx="9" fill="#22130a" stroke="#8a5a24" stroke-width="1.5"/>
 
-  <foreignObject x="22" y="20" width="856" height="460">
-    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #e8d8c0; width: 100%; height: 100%;">
-      <table style="width: 100%; border-collapse: collapse; font-size: 12.8px;">
-        <thead>
-          <tr style="border-bottom: 2px solid #8c5c26; background: rgba(62, 35, 16, 0.65); font-family: Georgia, serif; color: #f3d289; font-size: 12px; letter-spacing: 1px;">
-            <th style="padding: 12px 10px; text-align: left; width: 20%;">CAMADA DE ENGENHARIA</th>
-            <th style="padding: 12px 10px; text-align: left; width: 24%;">FRAMEWORKS &amp; ECOSSISTEMA</th>
-            <th style="padding: 12px 10px; text-align: left; width: 38%;">APLICAÇÃO EM ARQUITETURA DE SOFTWARE</th>
-            <th style="padding: 12px 10px; text-align: left; width: 18%;">ÍNDICE DE USO</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- LINHA 1: BACK-END -->
-          <tr style="border-bottom: 1px solid #3d2512;">
-            <td style="padding: 13px 10px; font-weight: 700; color: #f5d799; font-family: Georgia, serif;">
-              ⚔️ Back-End &amp; APIs
-            </td>
-            <td style="padding: 13px 10px;">
-              <span style="display:inline-block; background:#14532d; color:#bbf7d0; border:1px solid #22c55e; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">Spring Boot 3</span>
-              <span style="display:inline-block; background:#7c2d12; color:#fed7aa; border:1px solid #f97316; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">Java 21</span>
-              <span style="display:inline-block; background:#1e3a8a; color:#bfdbfe; border:1px solid #60a5fa; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">Node.js</span>
-              <span style="display:inline-block; background:#312e81; color:#c7d2fe; border:1px solid #818cf8; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">PHP</span>
-            </td>
-            <td style="padding: 13px 10px; color: #d6c3a5; line-height: 1.45;">
-              APIs RESTful, Spring Security, Autenticação Stateless (JWT / AES-256), JPA/Hibernate e Gateways IMAP/SMTP
-            </td>
-            <td style="padding: 13px 10px;">
-              <div style="font-family: monospace; font-size: 11px; color: #fbbf24; margin-bottom: 4px;">95% • Master</div>
-              <div style="width: 100%; height: 9px; background: #0d0703; border: 1px solid #6e481b; border-radius: 5px; overflow: hidden;">
-                <div style="width: 95%; height: 100%; background: linear-gradient(90deg, #b45309, #fbbf24);"></div>
-              </div>
-            </td>
-          </tr>
+  <!-- ================= CARD 1: BACK-END & APIs (95%) ================= -->
+  <g transform="translate(22, 22)">
+    <rect class="bg-wood-card" x="0" y="0" width="636" height="136" rx="8" fill="#28170c" stroke="#9c6d2e" stroke-width="1.6"/>
+    <rect x="0" y="0" width="9" height="136" rx="4" fill="#f59e0b"/>
+    <text class="txt-gold" x="24" y="30" fill="#f5d796" font-family="Georgia, 'Times New Roman', serif" font-size="18.5" font-weight="bold">
+      ⚔️ 1. BACK-END &amp; APIS WEB
+    </text>
+    <rect class="bar-track" x="446" y="15" width="122" height="14" rx="7" fill="#120a05" stroke="#c89143" stroke-width="1.2"/>
+    <rect x="448" y="17" width="112" height="10" rx="5" fill="url(#mGold)"/>
+    <text class="pct-gold" x="578" y="29" fill="#fbbf24" font-family="Consolas, monospace" font-size="17" font-weight="bold">95%</text>
 
-          <!-- LINHA 2: FRONT-END -->
-          <tr style="border-bottom: 1px solid #3d2512; background: rgba(38, 21, 10, 0.35);">
-            <td style="padding: 13px 10px; font-weight: 700; color: #f5d799; font-family: Georgia, serif;">
-              🛡️ Front-End Web (SPA)
-            </td>
-            <td style="padding: 13px 10px;">
-              <span style="display:inline-block; background:#7f1d1d; color:#fecaca; border:1px solid #f87171; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">Angular</span>
-              <span style="display:inline-block; background:#1e3a8a; color:#bfdbfe; border:1px solid #38bdf8; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">TypeScript</span>
-              <span style="display:inline-block; background:#164e63; color:#a5f3fc; border:1px solid #22d3ee; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">Tailwind</span>
-              <span style="display:inline-block; background:#4c1d95; color:#ddd6fe; border:1px solid #a78bfa; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">Bootstrap</span>
-            </td>
-            <td style="padding: 13px 10px; color: #d6c3a5; line-height: 1.45;">
-              Arquitetura SPA, Componentização Reativa (RxJS), Consumo de APIs REST e Design System Responsivo (HTML5/CSS3)
-            </td>
-            <td style="padding: 13px 10px;">
-              <div style="font-family: monospace; font-size: 11px; color: #fbbf24; margin-bottom: 4px;">90% • High</div>
-              <div style="width: 100%; height: 9px; background: #0d0703; border: 1px solid #6e481b; border-radius: 5px; overflow: hidden;">
-                <div style="width: 90%; height: 100%; background: linear-gradient(90deg, #991b1b, #f87171);"></div>
-              </div>
-            </td>
-          </tr>
+    <rect x="24" y="45" width="142" height="30" rx="5" fill="#14532d" stroke="#22c55e" stroke-width="1.3"/>
+    <text x="95" y="65" text-anchor="middle" fill="#dcfce7" font-family="sans-serif" font-size="15" font-weight="bold">Spring Boot 3</text>
 
-          <!-- LINHA 3: MOBILE -->
-          <tr style="border-bottom: 1px solid #3d2512;">
-            <td style="padding: 13px 10px; font-weight: 700; color: #f5d799; font-family: Georgia, serif;">
-              🏹 Mobile Multiplataforma
-            </td>
-            <td style="padding: 13px 10px;">
-              <span style="display:inline-block; background:#0c4a6e; color:#bae6fd; border:1px solid #38bdf8; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">React Native</span>
-              <span style="display:inline-block; background:#334155; color:#e2e8f0; border:1px solid #94a3b8; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">Expo SDK</span>
-            </td>
-            <td style="padding: 13px 10px; color: #d6c3a5; line-height: 1.45;">
-              Aplicativos Android/iOS Nativos, Gerenciamento de Estado com Context/Hooks, Armazenamento Seguro e Axios
-            </td>
-            <td style="padding: 13px 10px;">
-              <div style="font-family: monospace; font-size: 11px; color: #38bdf8; margin-bottom: 4px;">86% • Prof</div>
-              <div style="width: 100%; height: 9px; background: #0d0703; border: 1px solid #6e481b; border-radius: 5px; overflow: hidden;">
-                <div style="width: 86%; height: 100%; background: linear-gradient(90deg, #0369a1, #38bdf8);"></div>
-              </div>
-            </td>
-          </tr>
+    <rect x="176" y="45" width="96" height="30" rx="5" fill="#7c2d12" stroke="#f97316" stroke-width="1.3"/>
+    <text x="224" y="65" text-anchor="middle" fill="#ffedd5" font-family="sans-serif" font-size="15" font-weight="bold">Java 21</text>
 
-          <!-- LINHA 4: DADOS & SQL -->
-          <tr style="border-bottom: 1px solid #3d2512; background: rgba(38, 21, 10, 0.35);">
-            <td style="padding: 13px 10px; font-weight: 700; color: #f5d799; font-family: Georgia, serif;">
-              📜 Dados &amp; Persistência
-            </td>
-            <td style="padding: 13px 10px;">
-              <span style="display:inline-block; background:#1e3a8a; color:#bfdbfe; border:1px solid #60a5fa; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">MySQL</span>
-              <span style="display:inline-block; background:#172554; color:#93c5fd; border:1px solid #3b82f6; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">PostgreSQL</span>
-            </td>
-            <td style="padding: 13px 10px; color: #d6c3a5; line-height: 1.45;">
-              Modelagem Relacional, Queries Complexas SQL, Extração de Relatórios Gerenciais (ERP Linx) e Performance Tuning
-            </td>
-            <td style="padding: 13px 10px;">
-              <div style="font-family: monospace; font-size: 11px; color: #4ade80; margin-bottom: 4px;">88% • High</div>
-              <div style="width: 100%; height: 9px; background: #0d0703; border: 1px solid #6e481b; border-radius: 5px; overflow: hidden;">
-                <div style="width: 88%; height: 100%; background: linear-gradient(90deg, #15803d, #4ade80);"></div>
-              </div>
-            </td>
-          </tr>
+    <rect x="282" y="45" width="98" height="30" rx="5" fill="#1e3a8a" stroke="#60a5fa" stroke-width="1.3"/>
+    <text x="331" y="65" text-anchor="middle" fill="#dbeafe" font-family="sans-serif" font-size="15" font-weight="bold">Node.js</text>
 
-          <!-- LINHA 5: CLOUD & INFRA -->
-          <tr>
-            <td style="padding: 13px 10px; font-weight: 700; color: #f5d799; font-family: Georgia, serif;">
-              🏰 Cloud, DevOps &amp; Infra
-            </td>
-            <td style="padding: 13px 10px;">
-              <span style="display:inline-block; background:#78350f; color:#fde68a; border:1px solid #f59e0b; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">AWS Cloud</span>
-              <span style="display:inline-block; background:#0c4a6e; color:#bae6fd; border:1px solid #38bdf8; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">Docker</span>
-              <span style="display:inline-block; background:#713f12; color:#fef08a; border:1px solid #eab308; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">Linux</span>
-              <span style="display:inline-block; background:#7c2d12; color:#fed7aa; border:1px solid #f97316; padding:2px 7px; border-radius:4px; font-size:11px; font-weight:600; margin:2px;">Git</span>
-            </td>
-            <td style="padding: 13px 10px; color: #d6c3a5; line-height: 1.45;">
-              Containerização, Servidores Linux, Gestão de Zonas DNS, Hospedagem Web (KingHost) e Segurança da Informação
-            </td>
-            <td style="padding: 13px 10px;">
-              <div style="font-family: monospace; font-size: 11px; color: #fbbf24; margin-bottom: 4px;">85% • High</div>
-              <div style="width: 100%; height: 9px; background: #0d0703; border: 1px solid #6e481b; border-radius: 5px; overflow: hidden;">
-                <div style="width: 85%; height: 100%; background: linear-gradient(90deg, #b45309, #fbbf24);"></div>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </foreignObject>
+    <rect x="390" y="45" width="76" height="30" rx="5" fill="#312e81" stroke="#818cf8" stroke-width="1.3"/>
+    <text x="428" y="65" text-anchor="middle" fill="#e0e7ff" font-family="sans-serif" font-size="15" font-weight="bold">PHP</text>
+
+    <text class="txt-body" x="24" y="99" fill="#f5ebd6" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="bold">
+      APIs RESTful escaláveis, Spring Security (JWT / AES-256),
+    </text>
+    <text class="txt-body" x="24" y="122" fill="#f5ebd6" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="bold">
+      JPA/Hibernate e Gateways de mensageria IMAP/SMTP.
+    </text>
+  </g>
+
+  <!-- ================= CARD 2: FRONT-END WEB SPA (90%) ================= -->
+  <g transform="translate(22, 170)">
+    <rect class="bg-wood-card" x="0" y="0" width="636" height="136" rx="8" fill="#28170c" stroke="#9c6d2e" stroke-width="1.6"/>
+    <rect x="0" y="0" width="9" height="136" rx="4" fill="#ef4444"/>
+    <text class="txt-gold" x="24" y="30" fill="#f5d796" font-family="Georgia, 'Times New Roman', serif" font-size="18.5" font-weight="bold">
+      🛡️ 2. FRONT-END WEB (SPA)
+    </text>
+    <rect class="bar-track" x="446" y="15" width="122" height="14" rx="7" fill="#120a05" stroke="#c89143" stroke-width="1.2"/>
+    <rect x="448" y="17" width="106" height="10" rx="5" fill="url(#mRed)"/>
+    <text class="pct-red" x="578" y="29" fill="#f87171" font-family="Consolas, monospace" font-size="17" font-weight="bold">90%</text>
+
+    <rect x="24" y="45" width="102" height="30" rx="5" fill="#7f1d1d" stroke="#f87171" stroke-width="1.3"/>
+    <text x="75" y="65" text-anchor="middle" fill="#fee2e2" font-family="sans-serif" font-size="15" font-weight="bold">Angular</text>
+
+    <rect x="136" y="45" width="120" height="30" rx="5" fill="#1e3a8a" stroke="#38bdf8" stroke-width="1.3"/>
+    <text x="196" y="65" text-anchor="middle" fill="#dbeafe" font-family="sans-serif" font-size="15" font-weight="bold">TypeScript</text>
+
+    <rect x="266" y="45" width="128" height="30" rx="5" fill="#164e63" stroke="#22d3ee" stroke-width="1.3"/>
+    <text x="330" y="65" text-anchor="middle" fill="#cffafe" font-family="sans-serif" font-size="15" font-weight="bold">Tailwind CSS</text>
+
+    <rect x="404" y="45" width="110" height="30" rx="5" fill="#4c1d95" stroke="#a78bfa" stroke-width="1.3"/>
+    <text x="459" y="65" text-anchor="middle" fill="#ede9fe" font-family="sans-serif" font-size="15" font-weight="bold">Bootstrap</text>
+
+    <text class="txt-body" x="24" y="99" fill="#f5ebd6" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="bold">
+      Arquitetura SPA reativa (RxJS), consumo de APIs REST
+    </text>
+    <text class="txt-body" x="24" y="122" fill="#f5ebd6" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="bold">
+      e interfaces modernas responsivas em HTML5 / CSS3.
+    </text>
+  </g>
+
+  <!-- ================= CARD 3: MOBILE MULTIPLATAFORMA (86%) ================= -->
+  <g transform="translate(22, 318)">
+    <rect class="bg-wood-card" x="0" y="0" width="636" height="136" rx="8" fill="#28170c" stroke="#9c6d2e" stroke-width="1.6"/>
+    <rect x="0" y="0" width="9" height="136" rx="4" fill="#38bdf8"/>
+    <text class="txt-gold" x="24" y="30" fill="#f5d796" font-family="Georgia, 'Times New Roman', serif" font-size="18.5" font-weight="bold">
+      🏹 3. MOBILE MULTIPLATAFORMA
+    </text>
+    <rect class="bar-track" x="446" y="15" width="122" height="14" rx="7" fill="#120a05" stroke="#c89143" stroke-width="1.2"/>
+    <rect x="448" y="17" width="101" height="10" rx="5" fill="url(#mBlue)"/>
+    <text class="pct-blue" x="578" y="29" fill="#38bdf8" font-family="Consolas, monospace" font-size="17" font-weight="bold">86%</text>
+
+    <rect x="24" y="45" width="134" height="30" rx="5" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.3"/>
+    <text x="91" y="65" text-anchor="middle" fill="#e0f2fe" font-family="sans-serif" font-size="15" font-weight="bold">React Native</text>
+
+    <rect x="168" y="45" width="134" height="30" rx="5" fill="#334155" stroke="#94a3b8" stroke-width="1.3"/>
+    <text x="235" y="65" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="15" font-weight="bold">Expo SDK 58</text>
+
+    <rect x="312" y="45" width="120" height="30" rx="5" fill="#1e3a8a" stroke="#60a5fa" stroke-width="1.3"/>
+    <text x="372" y="65" text-anchor="middle" fill="#dbeafe" font-family="sans-serif" font-size="15" font-weight="bold">Axios REST</text>
+
+    <text class="txt-body" x="24" y="99" fill="#f5ebd6" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="bold">
+      Aplicativos Android e iOS nativos com Context/Hooks,
+    </text>
+    <text class="txt-body" x="24" y="122" fill="#f5ebd6" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="bold">
+      armazenamento seguro, autenticação JWT e Axios.
+    </text>
+  </g>
+
+  <!-- ================= CARD 4: DADOS & PERSISTÊNCIA SQL (88%) ================= -->
+  <g transform="translate(22, 466)">
+    <rect class="bg-wood-card" x="0" y="0" width="636" height="136" rx="8" fill="#28170c" stroke="#9c6d2e" stroke-width="1.6"/>
+    <rect x="0" y="0" width="9" height="136" rx="4" fill="#22c55e"/>
+    <text class="txt-gold" x="24" y="30" fill="#f5d796" font-family="Georgia, 'Times New Roman', serif" font-size="18.5" font-weight="bold">
+      📜 4. BANCOS DE DADOS &amp; ERP
+    </text>
+    <rect class="bar-track" x="446" y="15" width="122" height="14" rx="7" fill="#120a05" stroke="#c89143" stroke-width="1.2"/>
+    <rect x="448" y="17" width="104" height="10" rx="5" fill="url(#mGreen)"/>
+    <text class="pct-green" x="578" y="29" fill="#4ade80" font-family="Consolas, monospace" font-size="17" font-weight="bold">88%</text>
+
+    <rect x="24" y="45" width="98" height="30" rx="5" fill="#1e3a8a" stroke="#60a5fa" stroke-width="1.3"/>
+    <text x="73" y="65" text-anchor="middle" fill="#dbeafe" font-family="sans-serif" font-size="15" font-weight="bold">MySQL</text>
+
+    <rect x="132" y="45" width="128" height="30" rx="5" fill="#172554" stroke="#3b82f6" stroke-width="1.3"/>
+    <text x="196" y="65" text-anchor="middle" fill="#dbeafe" font-family="sans-serif" font-size="15" font-weight="bold">PostgreSQL</text>
+
+    <rect x="270" y="45" width="128" height="30" rx="5" fill="#064e3b" stroke="#34d399" stroke-width="1.3"/>
+    <text x="334" y="65" text-anchor="middle" fill="#d1fae5" font-family="sans-serif" font-size="15" font-weight="bold">SQL Tuning</text>
+
+    <text class="txt-body" x="24" y="99" fill="#f5ebd6" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="bold">
+      Modelagem relacional, queries SQL complexas, relatórios
+    </text>
+    <text class="txt-body" x="24" y="122" fill="#f5ebd6" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="bold">
+      gerenciais no ERP Linx e otimização de performance.
+    </text>
+  </g>
+
+  <!-- ================= CARD 5: CLOUD, DEVOPS & INFRA (84%) ================= -->
+  <g transform="translate(22, 614)">
+    <rect class="bg-wood-card" x="0" y="0" width="636" height="136" rx="8" fill="#28170c" stroke="#9c6d2e" stroke-width="1.6"/>
+    <rect x="0" y="0" width="9" height="136" rx="4" fill="#eab308"/>
+    <text class="txt-gold" x="24" y="30" fill="#f5d796" font-family="Georgia, 'Times New Roman', serif" font-size="18.5" font-weight="bold">
+      🏰 5. CLOUD, DEVOPS &amp; INFRA WEB
+    </text>
+    <rect class="bar-track" x="446" y="15" width="122" height="14" rx="7" fill="#120a05" stroke="#c89143" stroke-width="1.2"/>
+    <rect x="448" y="17" width="98" height="10" rx="5" fill="url(#mGold)"/>
+    <text class="pct-gold" x="578" y="29" fill="#facc15" font-family="Consolas, monospace" font-size="17" font-weight="bold">84%</text>
+
+    <rect x="24" y="45" width="118" height="30" rx="5" fill="#78350f" stroke="#f59e0b" stroke-width="1.3"/>
+    <text x="83" y="65" text-anchor="middle" fill="#fef3c7" font-family="sans-serif" font-size="15" font-weight="bold">AWS Cloud</text>
+
+    <rect x="152" y="45" width="96" height="30" rx="5" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.3"/>
+    <text x="200" y="65" text-anchor="middle" fill="#e0f2fe" font-family="sans-serif" font-size="15" font-weight="bold">Docker</text>
+
+    <rect x="258" y="45" width="88" height="30" rx="5" fill="#713f12" stroke="#eab308" stroke-width="1.3"/>
+    <text x="302" y="65" text-anchor="middle" fill="#fef9c3" font-family="sans-serif" font-size="15" font-weight="bold">Linux</text>
+
+    <rect x="356" y="45" width="74" height="30" rx="5" fill="#7c2d12" stroke="#f97316" stroke-width="1.3"/>
+    <text x="393" y="65" text-anchor="middle" fill="#ffedd5" font-family="sans-serif" font-size="15" font-weight="bold">Git</text>
+
+    <text class="txt-body" x="24" y="99" fill="#f5ebd6" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="bold">
+      Containerização Docker, servidores Linux, zonas DNS,
+    </text>
+    <text class="txt-body" x="24" y="122" fill="#f5ebd6" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="bold">
+      suporte a sites/APIs (LWSA) e Segurança da Informação.
+    </text>
+  </g>
 </svg>
-
